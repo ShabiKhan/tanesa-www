@@ -1,0 +1,233 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>ShopFine : html5, css, jQuery eCommerce Template based on bootstrap.</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;ShopFine&rdquo; : Documentation by &ldquo;<a href="http://themeforest.net/user/ahmedchan" target="_blank">Ahmedchan</a>&rdquo;</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;SHOPFINE&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 3/20/2013<br>
+					By: ahmedchan<br>
+					Email: <a href="mr.ahmedsaeed1@gmail.com">mr.ahmedsaeed1@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my Template. If you have any questions that are beyond the scope of this help file, please feel free to email me via my user page contact form <a href="http://themeforest.net/user/ahmedchan">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#description">Description</a></li>
+			<li><a href="#fileStructure">File Structure</a></li>
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#plugins">jQuery Plugins Used</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+			<li><a href="#tweetDisplay">Customize your latest tweets</a></li>
+		</ol>
+		
+		<hr>
+
+		<h3 id="description"><strong>A) Description</strong> - <a href="#toc">top</a></h3>
+		<p>This template is designed to be Responsive and eCommerce template, It can serve the purpose of all eCommerce sites ( 'opencart', 'magento', 'WooCommerce', 'prestashop', 'shopify' ) and other purposes.<br>
+		However,as I included an 'Home', 'blog', 'post', 'contact' and 'view product list and grid', 'product page', 'cart page', 'wishlist page', 'account', 'compare' 'login and register'...etc.</p>
+		
+		
+		<hr>
+
+		<h3 id="fileStructure"><strong>A+) File Structure</strong> - <a href="#toc">top</a></h3>
+		<p>I have arranged the template into folders so, it's easy for you to navigate the file easily. the Structure as below:</p>
+		
+		<img src="assets/images/file1.png" alt="HTML Structure" />
+	
+		<img src="assets/images/file3.png" alt="HTML Structure" />
+
+		<hr>
+
+
+		<h3 id="htmlStructure"><strong>b) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>This theme is a RESPONSIVE theme based on bootstrap css framework. All of the information within the main content area is nested within a div with an id of "mainContainer". The sidebar's (column #2) content is within a aside tag. The general template structure is the same throughout the template. Here is the general structure.</p>
+		
+		<img src="assets/images/main_html.png" alt="HTML Structure" />
+
+		<hr>
+
+
+		<h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+		<p>I'm using only the main three CSS files in this theme for every page. The first one is a ('bootstrap.css'), it's generic reset file and it's collection of classes. that contains a lot of formating for general divs, also has global reset that all the browsers need them, the second one is ('customize.css') and in there we override some of the styling that bootstrap aplied, so we atchive our style, such as anchor tag colors, font-sizes, the third one is (style.css) and it has header and footer styling for all the pages and all other elements etc.</p> 
+
+		<hr>
+		
+		<h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme imports three kind of Javascript files.</p>
+		
+		<ol>
+			<li>jQuery (the library * connected directly with google server *)</li>
+			<li>jQuery plugins.</li>
+			<li>My custom scripts (main.js / contact.js)</li>
+			
+		</ol>
+		  
+		<ol>
+			<li>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</li>
+			<li>Most of the animation in this site is carried out from the customs scripts. There are a few functions worth looking over.<br><br>
+			for example in custom.js file you'll find the functions that controlls the topnav and mainnav on tablets and phone (responsive navigation) and dropdown on main navigation on desktop size like so...
+			<br><br>
+
+			<img src="assets/images/tab_dropdown.png" alt="js codes">
+			<br><br>
+
+			</li>
+			<li>In addition to the custom scripts, I implement a few "tried and true" plugins to create the effects. This plugin is packed, so you won't need to manually edit anything in the file. The only necessary thing to know is how to call the method. For example see the fancybox plugin and flexsliders and tooltip and display your tweets plugin:
+<pre>	
+// flexslider on home page
+function flexSlideShow() {
+	$('.flexslider').flexslider({
+		 animation: "slide",
+		 slideshowSpeed: 4000,
+		 directionNav: false,
+		 pauseOnHover: true,
+		 directionNav: false
+	});
+}
+
+
+// link fancybox plugin on product detail
+function productFancyBox() {
+	$(".fancybox").fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+}
+
+
+// display your twiter feed here
+$(function(){
+    $(".tweet").tweet({
+        username: "seaofclouds",
+        join_text: "auto",
+        avatar_size: 0,
+        count: 2,
+        auto_join_text_default: "we said,", 
+        auto_join_text_ed: "we",
+        auto_join_text_ing: "we were",
+        auto_join_text_reply: "we replied to",
+        auto_join_text_url: "we were checking out",
+        loading_text: "loading tweets..."
+    });
+});//end
+</pre>
+			</li>
+		</ol>
+		
+		<hr>
+
+
+		<h3 id="plugins">
+			<strong>D) jQuery Plugins Used</strong> - <a href="#toc">top</a>
+		</h3>
+
+		<p>I've used the following jQuery Plugins as listed.</p>
+		
+		<ul>
+			<li>jQuery flixslider Plugin : <a target="_blank" href="http://www.woothemes.com/flexslider/">http://jquery.malsup.com/</a></li>
+
+			<li>jQuery cycle Plugin : <a target="_blank" href="http://jquery.malsup.com/cycle2/">http://jquery.malsup.com/</a></li>
+
+			<li>jQuery cookie Plugin : <a target="_blank" href="http://archive.plugins.jquery.com/project/Cookie">http://archive.plugins.jquery.com/project/Cookie</a></li>
+
+			<li>jQuery FancyBox-2 Plugin : <a target="_blank" href="http://fancyapps.com/fancybox/">http://fancyapps.com/fancybox/</a></li>
+
+			<li>jQuery seaofclouds-tweet Plugin : <a target="_blank" href="http://tweet.seaofclouds.com/">http://fancyapps.com/fancybox/</a></li>
+		</ul>
+
+		<p>
+			in addation to that there is one scripts for you to change backgrounds. and toggle bettween wide and boxed view
+			<br>
+			note: All the jQuery plugins in the bottom of every page. 
+		</p>
+
+
+
+		<hr>
+
+
+		<h3 id="credits"><strong>E) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've used the following images, icons or other files as listed.</p>
+		
+		<ul>
+			<li>
+				general styling By : <a target="_blank" href="http://twitter.github.com/bootstrap/index.html">Bootstrap/</a>
+			</li>
+			<li>
+				Icons By font Awesome : <a target="_blank" href="http://fortawesome.github.com/Font-Awesome/">http://fortawesome.github.com/Font-Awesome/</a>
+			</li>
+			<li>
+				Social Icons by: <a target="_blank" href="http://iconsweets2.com/">iconsweets2.com</a>
+			</li>
+			<li>
+				Fonts from google server: <a target="_blank" href="http://www.google.com/webfonts">http://www.google.com/webfonts</a>
+			</li>
+			<li>
+				Backgrounds pattren by subtle satterns: <a target="_blank" href=" http://subtlepatterns.com/">http://subtlepatterns.com</a>
+			</li>
+		</ul>
+
+		<hr>
+
+		<h3 id="tweetDisplay"><strong>F) Customize your latest tweets</strong> - <a href="#toc">top</a></h3>
+
+		<p>
+			all you have to do is to change your twitter username instead of seaofclouds username, then change the tweets count as you like to display, in the (main.js) file<br>
+			See the following image and you'll understand what I mean...
+			<br>
+			<img src="assets/images/tweets.PNG" alt="HTML Structure" />
+			<br>
+			change "seaofclouds" : to your twitter username.<br>
+			change "count" :  to the number of feeds you want to display.
+		</p>
+		
+		<hr>
+		
+		
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+
+		<strong>Please, if you like the theme, Make your Rate in your download page on themeforest</strong>
+		
+		<p class="append-bottom alt large"><strong>ahmedchan</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
